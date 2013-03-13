@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Showcase" product="MySQL" version="5.5.11" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq )" uuid="1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/showcase</jdbc-url>
+    <schema-pattern>showcase.*</schema-pattern>
+    <default-schemas>showcase.*</default-schemas>
+    <default-dialect>MySQL</default-dialect>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/../JPA/mysql-connector-java-5.1.18-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://$PROJECT_DIR$/../JPA/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="showcase" />
+    <table name="CONTACT" schema="" catalog="showcase" type="TABLE">
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="FIRST_NAME" sqlType="VARCHAR" length="60" precision="0" nullable="false" jdbcType="12" />
+      <column name="LAST_NAME" sqlType="VARCHAR" length="40" precision="0" nullable="false" jdbcType="12" />
+      <column name="BIRTH_DATE" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <primary-key name="PRIMARY" columns="ID" />
+      <index name="UQ_CONTACT_1" unique="true" columns="FIRST_NAME,LAST_NAME" />
+    </table>
+    <table name="CONTACT_TEL_DETAIL" schema="" catalog="showcase" type="TABLE">
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="CONTACT_ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="TEL_TYPE" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="TEL_NUMBER" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="ID" />
+      <foreign-key name="FK_CONTACT_TEL_DETAIL_1" columns="CONTACT_ID" ref-table="CONTACT" ref-schema="" ref-catalog="showcase" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2" />
+      <index name="UQ_CONTACT_TEL_DETAIL_1" unique="true" columns="CONTACT_ID,TEL_TYPE" />
+    </table>
+    <table name="books" schema="" catalog="showcase" type="TABLE">
+      <column name="book_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="book_title" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="author" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="start_date" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <column name="end_date" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <column name="rating" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <primary-key name="PRIMARY" columns="book_id" />
+    </table>
+    <table name="colleges" schema="" catalog="showcase" type="TABLE">
+      <column name="college_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="college_nm" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="college_id" />
+      <exported-key name="fk_college_id" table="partners" schema="" catalog="showcase" columns="college_id" />
+    </table>
+    <table name="customers" schema="" catalog="showcase" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="first_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="last_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="email_address" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="home_address" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="city" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="state" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="zip" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="process_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
+      <primary-key name="PRIMARY" columns="id" />
+    </table>
+    <table name="hire_source" schema="" catalog="showcase" type="TABLE">
+      <column name="source_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="source_desc" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="source_id" />
+    </table>
+    <table name="majors" schema="" catalog="showcase" type="TABLE">
+      <column name="major_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="major_desc" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="major_id" />
+      <exported-key name="fk_major_id" table="partners" schema="" catalog="showcase" columns="major_id" />
+    </table>
+    <table name="mentors" schema="" catalog="showcase" type="TABLE">
+      <column name="onepass_id" sqlType="VARCHAR" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="onepass_id" />
+    </table>
+    <table name="partners" schema="" catalog="showcase" type="TABLE">
+      <column name="onepass_id" sqlType="VARCHAR" length="7" precision="0" nullable="false" jdbcType="12" />
+      <column name="first_name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12" />
+      <column name="last_name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12" />
+      <column name="sadc_team_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="college_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="team_rank" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="sadc_rank" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="title_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="start_dt" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91" />
+      <column name="source_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="major_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="ps_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <primary-key name="PRIMARY" columns="onepass_id" />
+      <foreign-key name="fk_college_id" columns="college_id" ref-table="colleges" ref-schema="" ref-catalog="showcase" ref-columns="college_id" update-rule="3" delete-rule="3" deferrability="2" />
+      <foreign-key name="fk_major_id" columns="major_id" ref-table="majors" ref-schema="" ref-catalog="showcase" ref-columns="major_id" update-rule="3" delete-rule="3" deferrability="2" />
+      <foreign-key name="fk_team_id" columns="sadc_team_id" ref-table="teams" ref-schema="" ref-catalog="showcase" ref-columns="team_id" update-rule="3" delete-rule="3" deferrability="2" />
+      <foreign-key name="fk_title_id" columns="title_id" ref-table="titles" ref-schema="" ref-catalog="showcase" ref-columns="title_id" update-rule="3" delete-rule="3" deferrability="2" />
+      <index name="fk_source_id" unique="false" columns="source_id" />
+    </table>
+    <table name="teams" schema="" catalog="showcase" type="TABLE">
+      <column name="team_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="team_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="callup_date" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <column name="size" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <primary-key name="PRIMARY" columns="team_id" />
+      <exported-key name="fk_team_id" table="partners" schema="" catalog="showcase" columns="sadc_team_id" />
+    </table>
+    <table name="titles" schema="" catalog="showcase" type="TABLE">
+      <column name="title_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" remarks="CQ==" autoIncrement="true" />
+      <column name="title_desc" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="job_code" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="min_pay" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3" />
+      <column name="mid_pay" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3" />
+      <column name="max_pay" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3" />
+      <column name="pay_grade" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="title_id" />
+      <exported-key name="fk_title_id" table="partners" schema="" catalog="showcase" columns="title_id" />
+    </table>
+  </data-source>
+</component>
