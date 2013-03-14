@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
-
-    <persistence-unit name="persistenceUnit"/>
+    <persistence-unit name="persistenceUnit">
+        <class>com.cs.domain.BooksEntity</class>
+        <class>com.cs.domain.CollegesEntity</class>
+        <class>com.cs.domain.CustomersEntity</class>
+        <class>com.cs.domain.HireSourceEntity</class>
+        <class>com.cs.domain.MajorsEntity</class>
+        <class>com.cs.domain.MentorsEntity</class>
+        <class>com.cs.domain.PartnersEntity</class>
+        <class>com.cs.domain.TeamsEntity</class>
+        <class>com.cs.domain.TitlesEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/showcase"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+        </properties>
+    </persistence-unit>
 </persistence>
