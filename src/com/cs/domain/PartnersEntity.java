@@ -1,8 +1,6 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 /**
@@ -12,12 +10,16 @@ import java.sql.Date;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "partners", schema = "", catalog = "showcase")
+@Table(name = "partners", schema = "", catalog = "showcase")
 @Entity
+@NamedQueries({
+        @NamedQuery(name="PartnersEntity.findByOnepass",
+                    query="select distinct p from PartnersEntity p where p.id = :id")
+})
 public class PartnersEntity {
     private String onepassId;
 
-    @javax.persistence.Column(name = "onepass_id")
+    @Column(name = "onepass_id")
     @Id
     public String getOnepassId() {
         return onepassId;
@@ -29,7 +31,7 @@ public class PartnersEntity {
 
     private String firstName;
 
-    @javax.persistence.Column(name = "first_name")
+    @Column(name = "first_name")
     @Basic
     public String getFirstName() {
         return firstName;
@@ -41,7 +43,7 @@ public class PartnersEntity {
 
     private String lastName;
 
-    @javax.persistence.Column(name = "last_name")
+    @Column(name = "last_name")
     @Basic
     public String getLastName() {
         return lastName;
@@ -53,7 +55,7 @@ public class PartnersEntity {
 
     private int teamRank;
 
-    @javax.persistence.Column(name = "team_rank")
+    @Column(name = "team_rank")
     @Basic
     public int getTeamRank() {
         return teamRank;
@@ -65,7 +67,7 @@ public class PartnersEntity {
 
     private int sadcRank;
 
-    @javax.persistence.Column(name = "sadc_rank")
+    @Column(name = "sadc_rank")
     @Basic
     public int getSadcRank() {
         return sadcRank;
@@ -77,7 +79,7 @@ public class PartnersEntity {
 
     private Date startDt;
 
-    @javax.persistence.Column(name = "start_dt")
+    @Column(name = "start_dt")
     @Basic
     public Date getStartDt() {
         return startDt;
@@ -89,7 +91,7 @@ public class PartnersEntity {
 
     private int sourceId;
 
-    @javax.persistence.Column(name = "source_id")
+    @Column(name = "source_id")
     @Basic
     public int getSourceId() {
         return sourceId;
@@ -101,7 +103,7 @@ public class PartnersEntity {
 
     private int psId;
 
-    @javax.persistence.Column(name = "ps_id")
+    @Column(name = "ps_id")
     @Basic
     public int getPsId() {
         return psId;
@@ -141,5 +143,53 @@ public class PartnersEntity {
         result = 31 * result + sourceId;
         result = 31 * result + psId;
         return result;
+    }
+
+    private CollegesEntity collegesByCollegeId;
+
+    @ManyToOne
+    @JoinColumn(name = "college_id", referencedColumnName = "college_id", nullable = false)
+    public CollegesEntity getCollegesByCollegeId() {
+        return collegesByCollegeId;
+    }
+
+    public void setCollegesByCollegeId(CollegesEntity collegesByCollegeId) {
+        this.collegesByCollegeId = collegesByCollegeId;
+    }
+
+    private MajorsEntity majorsByMajorId;
+
+    @ManyToOne
+    @JoinColumn(name = "major_id", referencedColumnName = "major_id", nullable = false)
+    public MajorsEntity getMajorsByMajorId() {
+        return majorsByMajorId;
+    }
+
+    public void setMajorsByMajorId(MajorsEntity majorsByMajorId) {
+        this.majorsByMajorId = majorsByMajorId;
+    }
+
+    private TeamsEntity teamsBySadcTeamId;
+
+    @ManyToOne
+    @JoinColumn(name = "sadc_team_id", referencedColumnName = "team_id", nullable = false)
+    public TeamsEntity getTeamsBySadcTeamId() {
+        return teamsBySadcTeamId;
+    }
+
+    public void setTeamsBySadcTeamId(TeamsEntity teamsBySadcTeamId) {
+        this.teamsBySadcTeamId = teamsBySadcTeamId;
+    }
+
+    private TitlesEntity titlesByTitleId;
+
+    @ManyToOne
+    @JoinColumn(name = "title_id", referencedColumnName = "title_id", nullable = false)
+    public TitlesEntity getTitlesByTitleId() {
+        return titlesByTitleId;
+    }
+
+    public void setTitlesByTitleId(TitlesEntity titlesByTitleId) {
+        this.titlesByTitleId = titlesByTitleId;
     }
 }
