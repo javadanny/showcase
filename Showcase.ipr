@@ -32,6 +32,9 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="GradleSettings">
     <option name="gradleHome" value="$USER_HOME$/Documents/SADC/assignments/SADC 5/gradle-1.0-rc-3" />
   </component>
@@ -169,12 +172,28 @@
     <file url="file://$PROJECT_DIR$" dialect="MySQL" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
-    <library name="JPA 1.0-JPA 1.0">
+    <library name="hibernate-4.1.1" type="hibernate">
+      <properties version="4.1.1" />
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/lib/javaee.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/hibernate-core-4.1.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.1.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/antlr-2.7.7.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javassist-3.15.0-GA.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
+        <root url="jar://$PROJECT_DIR$/../JPA/mysql-connector-java-5.1.18-bin.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="JPA 2.0-JPA 2.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

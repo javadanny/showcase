@@ -1,8 +1,6 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,12 +9,12 @@ import javax.persistence.Id;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "mentors", schema = "", catalog = "showcase")
+@Table(name = "mentors", schema = "", catalog = "showcase")
 @Entity
 public class MentorsEntity {
     private String onepassId;
 
-    @javax.persistence.Column(name = "onepass_id")
+    @Column(name = "onepass_id")
     @Id
     public String getOnepassId() {
         return onepassId;
@@ -28,7 +26,7 @@ public class MentorsEntity {
 
     private String name;
 
-    @javax.persistence.Column(name = "name")
+    @Column(name = "name")
     @Basic
     public String getName() {
         return name;

@@ -1,8 +1,7 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,12 +10,12 @@ import javax.persistence.Id;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "majors", schema = "", catalog = "showcase")
+@Table(name = "majors", schema = "", catalog = "showcase")
 @Entity
 public class MajorsEntity {
     private int majorId;
 
-    @javax.persistence.Column(name = "major_id")
+    @Column(name = "major_id")
     @Id
     public int getMajorId() {
         return majorId;
@@ -28,7 +27,7 @@ public class MajorsEntity {
 
     private String majorDesc;
 
-    @javax.persistence.Column(name = "major_desc")
+    @Column(name = "major_desc")
     @Basic
     public String getMajorDesc() {
         return majorDesc;
@@ -56,5 +55,16 @@ public class MajorsEntity {
         int result = majorId;
         result = 31 * result + (majorDesc != null ? majorDesc.hashCode() : 0);
         return result;
+    }
+
+    private Collection<PartnersEntity> partnersesByMajorId;
+
+    @OneToMany(mappedBy = "majorsByMajorId")
+    public Collection<PartnersEntity> getPartnersesByMajorId() {
+        return partnersesByMajorId;
+    }
+
+    public void setPartnersesByMajorId(Collection<PartnersEntity> partnersesByMajorId) {
+        this.partnersesByMajorId = partnersesByMajorId;
     }
 }

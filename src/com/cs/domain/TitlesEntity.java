@@ -1,8 +1,7 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,12 +10,12 @@ import javax.persistence.Id;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "titles", schema = "", catalog = "showcase")
+@Table(name = "titles", schema = "", catalog = "showcase")
 @Entity
 public class TitlesEntity {
     private int titleId;
 
-    @javax.persistence.Column(name = "title_id")
+    @Column(name = "title_id")
     @Id
     public int getTitleId() {
         return titleId;
@@ -28,7 +27,7 @@ public class TitlesEntity {
 
     private String titleDesc;
 
-    @javax.persistence.Column(name = "title_desc")
+    @Column(name = "title_desc")
     @Basic
     public String getTitleDesc() {
         return titleDesc;
@@ -40,7 +39,7 @@ public class TitlesEntity {
 
     private String jobCode;
 
-    @javax.persistence.Column(name = "job_code")
+    @Column(name = "job_code")
     @Basic
     public String getJobCode() {
         return jobCode;
@@ -52,7 +51,7 @@ public class TitlesEntity {
 
     private int minPay;
 
-    @javax.persistence.Column(name = "min_pay")
+    @Column(name = "min_pay")
     @Basic
     public int getMinPay() {
         return minPay;
@@ -64,7 +63,7 @@ public class TitlesEntity {
 
     private int midPay;
 
-    @javax.persistence.Column(name = "mid_pay")
+    @Column(name = "mid_pay")
     @Basic
     public int getMidPay() {
         return midPay;
@@ -76,7 +75,7 @@ public class TitlesEntity {
 
     private int maxPay;
 
-    @javax.persistence.Column(name = "max_pay")
+    @Column(name = "max_pay")
     @Basic
     public int getMaxPay() {
         return maxPay;
@@ -88,7 +87,7 @@ public class TitlesEntity {
 
     private String payGrade;
 
-    @javax.persistence.Column(name = "pay_grade")
+    @Column(name = "pay_grade")
     @Basic
     public String getPayGrade() {
         return payGrade;
@@ -126,5 +125,16 @@ public class TitlesEntity {
         result = 31 * result + maxPay;
         result = 31 * result + (payGrade != null ? payGrade.hashCode() : 0);
         return result;
+    }
+
+    private Collection<PartnersEntity> partnersesByTitleId;
+
+    @OneToMany(mappedBy = "titlesByTitleId")
+    public Collection<PartnersEntity> getPartnersesByTitleId() {
+        return partnersesByTitleId;
+    }
+
+    public void setPartnersesByTitleId(Collection<PartnersEntity> partnersesByTitleId) {
+        this.partnersesByTitleId = partnersesByTitleId;
     }
 }

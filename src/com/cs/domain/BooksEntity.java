@@ -1,8 +1,6 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 /**
@@ -12,13 +10,18 @@ import java.sql.Date;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "books", schema = "", catalog = "showcase")
+@Table(name = "books", schema = "", catalog = "showcase")
 @Entity
+@NamedQueries({
+        @NamedQuery(name="BooksEntity.findById",
+                    query="select distinct b from BooksEntity b where b.id = :id")
+})
 public class BooksEntity {
     private int bookId;
 
-    @javax.persistence.Column(name = "book_id")
+    @Column(name = "book_id")
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getBookId() {
         return bookId;
     }
@@ -29,7 +32,7 @@ public class BooksEntity {
 
     private String bookTitle;
 
-    @javax.persistence.Column(name = "book_title")
+    @Column(name = "book_title")
     @Basic
     public String getBookTitle() {
         return bookTitle;
@@ -41,7 +44,7 @@ public class BooksEntity {
 
     private String author;
 
-    @javax.persistence.Column(name = "author")
+    @Column(name = "author")
     @Basic
     public String getAuthor() {
         return author;
@@ -53,7 +56,7 @@ public class BooksEntity {
 
     private Date startDate;
 
-    @javax.persistence.Column(name = "start_date")
+    @Column(name = "start_date")
     @Basic
     public Date getStartDate() {
         return startDate;
@@ -65,7 +68,7 @@ public class BooksEntity {
 
     private Date endDate;
 
-    @javax.persistence.Column(name = "end_date")
+    @Column(name = "end_date")
     @Basic
     public Date getEndDate() {
         return endDate;
@@ -77,7 +80,7 @@ public class BooksEntity {
 
     private int rating;
 
-    @javax.persistence.Column(name = "rating")
+    @Column(name = "rating")
     @Basic
     public int getRating() {
         return rating;

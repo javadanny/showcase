@@ -1,8 +1,7 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,12 +10,12 @@ import javax.persistence.Id;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "colleges", schema = "", catalog = "showcase")
+@Table(name = "colleges", schema = "", catalog = "showcase")
 @Entity
 public class CollegesEntity {
     private int collegeId;
 
-    @javax.persistence.Column(name = "college_id")
+    @Column(name = "college_id")
     @Id
     public int getCollegeId() {
         return collegeId;
@@ -28,7 +27,7 @@ public class CollegesEntity {
 
     private String collegeNm;
 
-    @javax.persistence.Column(name = "college_nm")
+    @Column(name = "college_nm")
     @Basic
     public String getCollegeNm() {
         return collegeNm;
@@ -56,5 +55,16 @@ public class CollegesEntity {
         int result = collegeId;
         result = 31 * result + (collegeNm != null ? collegeNm.hashCode() : 0);
         return result;
+    }
+
+    private Collection<PartnersEntity> partnersesByCollegeId;
+
+    @OneToMany(mappedBy = "collegesByCollegeId")
+    public Collection<PartnersEntity> getPartnersesByCollegeId() {
+        return partnersesByCollegeId;
+    }
+
+    public void setPartnersesByCollegeId(Collection<PartnersEntity> partnersesByCollegeId) {
+        this.partnersesByCollegeId = partnersesByCollegeId;
     }
 }

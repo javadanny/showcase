@@ -1,9 +1,8 @@
 package com.cs.domain;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,12 +11,12 @@ import java.sql.Date;
  * Time: 8:55 PM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "teams", schema = "", catalog = "showcase")
+@Table(name = "teams", schema = "", catalog = "showcase")
 @Entity
 public class TeamsEntity {
     private int teamId;
 
-    @javax.persistence.Column(name = "team_id")
+    @Column(name = "team_id")
     @Id
     public int getTeamId() {
         return teamId;
@@ -29,7 +28,7 @@ public class TeamsEntity {
 
     private String teamName;
 
-    @javax.persistence.Column(name = "team_name")
+    @Column(name = "team_name")
     @Basic
     public String getTeamName() {
         return teamName;
@@ -41,7 +40,7 @@ public class TeamsEntity {
 
     private Date callupDate;
 
-    @javax.persistence.Column(name = "callup_date")
+    @Column(name = "callup_date")
     @Basic
     public Date getCallupDate() {
         return callupDate;
@@ -53,7 +52,7 @@ public class TeamsEntity {
 
     private int size;
 
-    @javax.persistence.Column(name = "size")
+    @Column(name = "size")
     @Basic
     public int getSize() {
         return size;
@@ -85,5 +84,16 @@ public class TeamsEntity {
         result = 31 * result + (callupDate != null ? callupDate.hashCode() : 0);
         result = 31 * result + size;
         return result;
+    }
+
+    private Collection<PartnersEntity> partnersesByTeamId;
+
+    @OneToMany(mappedBy = "teamsBySadcTeamId")
+    public Collection<PartnersEntity> getPartnersesByTeamId() {
+        return partnersesByTeamId;
+    }
+
+    public void setPartnersesByTeamId(Collection<PartnersEntity> partnersesByTeamId) {
+        this.partnersesByTeamId = partnersesByTeamId;
     }
 }

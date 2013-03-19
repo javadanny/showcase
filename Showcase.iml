@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset1" name="XML Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/spring-config.xml</file>
+          <file>file://$MODULE_DIR$/src/app-context.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -12,8 +13,19 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="persistenceUnit" value="1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="sessionFactory" value="dataSource" />
+        </datasource-map>
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -26,7 +38,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="spring-3.1.0" level="project" />
     <orderEntry type="library" name="spring-data-jpa-1.0.0" level="project" />
-    <orderEntry type="library" name="JPA 1.0-JPA 1.0" level="project" />
+    <orderEntry type="library" name="JPA 2.0-JPA 2.0" level="project" />
+    <orderEntry type="library" name="hibernate-4.1.1" level="project" />
   </component>
 </module>
 

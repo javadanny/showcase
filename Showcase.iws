@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b545adb9-7b66-470a-8abe-6623fe25d2b8" name="Default" comment="" />
+    <list default="true" id="b545adb9-7b66-470a-8abe-6623fe25d2b8" name="Default" comment="generated domain classes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cs/dao/BooksDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cs/dao/BooksDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cs/PartnerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/cs/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-context.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/cs/domain/CustomersEntity.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/BooksEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/BooksEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/CollegesEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/CollegesEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/HireSourceEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/HireSourceEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/MajorsEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/MajorsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/MentorsEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/MentorsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Showcase.iml" afterPath="$PROJECT_DIR$/Showcase.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Showcase.ipr" afterPath="$PROJECT_DIR$/Showcase.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Showcase.iws" afterPath="$PROJECT_DIR$/Showcase.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/TeamsEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/TeamsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cs/domain/TitlesEntity.java" afterPath="$PROJECT_DIR$/src/com/cs/domain/TitlesEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spring-config.xml" afterPath="$PROJECT_DIR$/src/spring-config.xml" />
+    </list>
     <ignored path="Showcase.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1359866212375" ignored="false" />
+    <file path="/fragment.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363661175772" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/src/spring-config.xml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361331560019" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/SpringInAction.iws" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361416471566" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/SpringInAction.iml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361330045655" ignored="false" />
@@ -15,11 +33,26 @@
     <file path="/PerformanceExcpetion.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361330776876" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/src/com/sia/springidol/Juggler.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361331017025" ignored="false" />
     <file path="/Juggler.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361330985077" ignored="false" />
-    <file path="/spring-config.xml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361331560019" ignored="false" />
+    <file path="/spring-config.xml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363551783735" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/src/com/sia/springidol/Runner.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361331438132" ignored="false" />
     <file path="/Runner.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361331438132" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringInAction/src/com/sia/springidol/PoeticJuggler.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361333311096" ignored="false" />
     <file path="/PoeticJuggler.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1361333300518" ignored="false" />
+    <file path="/Dummy.txt" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363666005685" ignored="false" />
+    <file path="/persistence.xml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363144641488" ignored="false" />
+    <file path="/README" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363145795868" ignored="false" />
+    <file path="/TestIt.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363386890196" ignored="false" />
+    <file path="/app-context.xml" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363405858853" ignored="false" />
+    <file path="/BooksDao.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363484189027" ignored="false" />
+    <file path="/BooksDaoImpl.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363484258186" ignored="false" />
+    <file path="/Test.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363484452020" ignored="false" />
+    <file path="/BooksEntity.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363469964095" ignored="false" />
+    <file path="/sessionFactory" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363467781211" ignored="false" />
+    <file path="/Showcase" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363660672171" ignored="false" />
+    <file path="/PartnersDao.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363665592823" ignored="false" />
+    <file path="/PartnersDaoImpl.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363665614729" ignored="false" />
+    <file path="/PartnerTest.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363665686988" ignored="false" />
+    <file path="/PartnersEntity.java" changelist="b545adb9-7b66-470a-8abe-6623fe25d2b8" time="1363663889574" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +60,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -39,7 +77,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -74,6 +111,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -83,10 +122,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/persistence.xml">
+      <file leaf-file-name="PartnersDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/dao/PartnersDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="49" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartnersDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/dao/PartnersDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BooksDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/dao/BooksDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="45" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartnerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/PartnerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="42" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Showcase" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/Showcase23290c64/1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartnersEntity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/domain/PartnersEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="157" column="49" selection-start="4010" selection-end="4010" vertical-scroll-proportion="5.7777777">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BooksEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/domain/BooksEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="22" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cs/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="10" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,12 +207,49 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="expandStates">
+      <map>
+        <entry key="Showcase" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="dbtable:/Showcase23290c64/1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44/showcase..books" />
+        <option value="dbtable:/Showcase23290c64/96e879d7-0ae9-4f1f-a7b2-2931252bb7e1/showcase..colleges" />
+        <option value="$PROJECT_DIR$/src/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/com/cs/domain/TestIt.java" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/app-context.xml" />
+        <option value="$PROJECT_DIR$/src/com/cs/domain/BooksEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/dao/BooksDao.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/dao/BooksDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/Test.java" />
+        <option value="$PROJECT_DIR$/src/spring-config.xml" />
+        <option value="db-console:/Showcase23290c64/1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44/" />
+        <option value="$PROJECT_DIR$/src/com/cs/dao/PartnersDao.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/dao/PartnersDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/PartnerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/cs/domain/PartnersEntity.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="821" />
+    <option name="width" value="1440" />
+    <option name="height" value="820" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -163,36 +308,160 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Showcase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Showcase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Showcase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Showcase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="133" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="134" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/persistence.xml" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JPA/mysql-connector-java-5.1.18-bin.jar!/" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="144" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="932" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="934" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="136" />
+    <property name="Database.TableEditor.Splitter" value="0.62857145" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cs" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cs.domain" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.cs.domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PartnerTest">
+    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cs.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Showcase" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PartnerTest" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cs.PartnerTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Showcase" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -205,19 +474,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -246,6 +502,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -290,7 +559,16 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PartnerTest" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.PartnerTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -321,36 +599,80 @@
       <created>1359521845853</created>
       <updated>1359521845853</updated>
     </task>
+    <task id="LOCAL-00001" summary="cleaning up naughty words">
+      <created>1363145867012</created>
+      <updated>1363145867012</updated>
+    </task>
+    <task id="LOCAL-00002" summary="generated domain classes">
+      <created>1363226287898</created>
+      <updated>1363226287898</updated>
+    </task>
+    <task id="LOCAL-00003" summary="generated domain classes">
+      <created>1363226513646</created>
+      <updated>1363226513646</updated>
+    </task>
+    <task id="LOCAL-00004" summary="generated domain classes">
+      <created>1363665793560</created>
+      <updated>1363665793560</updated>
+    </task>
+    <task id="LOCAL-00005" summary="generated domain classes">
+      <created>1363666009502</created>
+      <updated>1363666009502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1420" height="821" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="820" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24910523" sideWeight="0.50071126" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37428573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37518036" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291874" sideWeight="0.67005074" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21520804" sideWeight="0.31428573" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22094691" sideWeight="0.67" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16642755" sideWeight="0.4557143" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291874" sideWeight="0.67005074" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257143" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16642755" sideWeight="0.53571427" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.48933142" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21520804" sideWeight="0.34571427" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34428573" sideWeight="0.99574107" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -358,7 +680,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
       <value>
@@ -391,7 +713,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="generated domain classes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -404,6 +726,8 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="cleaning up naughty words" />
+    <MESSAGE value="generated domain classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -413,33 +737,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/cs/dao/BooksDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="41" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="5" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../JPAStuff/JPAStuff.ipr">
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.1.1.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="62" column="33" selection-start="5433" selection-end="5433" vertical-scroll-proportion="0.35649547" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../JPAStuff/JPAStuff.ipr">
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="21" column="28" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence.xml">
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="35" column="26" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-core.jar!/org/springframework/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="3177" selection-end="3177" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="4" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/domain/BooksEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/dao/BooksDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="45" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/dao/PartnersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/dao/PartnersDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="49" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/PartnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="42" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/Showcase23290c64/1a6242f9-ed2d-4974-9ecf-ce1e8c9c2d44/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="0" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cs/domain/PartnersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="49" selection-start="4010" selection-end="4010" vertical-scroll-proportion="5.7777777">
           <folding />
         </state>
       </provider>
@@ -461,7 +872,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -496,7 +907,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|Showcase</last-edited>
+          <last-edited>Hibernate|Showcase</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -520,7 +931,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spring-3.1.0</last-edited>
+          <last-edited>JPA 2.0-JPA 2.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -3,4 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="booksDao"
+          class="com.cs.dao.BooksDaoImpl">
+    </bean>
+
+    <bean id="partnersDao"
+          class="com.cs.dao.PartnersDaoImpl">
+    </bean>
+
 </beans>
