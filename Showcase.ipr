@@ -27,7 +27,7 @@
   <component name="CopyrightManager" default="">
     <module2copyright />
   </component>
-  <component name="DataSourceManagerImpl" compressed="false" hash="68838457" />
+  <component name="DataSourceManagerImpl" compressed="false" hash="1690593041" />
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
@@ -175,6 +175,13 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
+    <library name="guava-14.0.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Documents/Keeping Up/Libraries/guava-14.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="hibernate-4.1.1" type="hibernate">
       <properties version="4.1.1" />
       <CLASSES>
@@ -187,6 +194,13 @@
         <root url="jar://$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
         <root url="jar://$PROJECT_DIR$/../JPA/mysql-connector-java-5.1.18-bin.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="joda-time-2.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Documents/Keeping Up/Libraries/joda-time-2.2/joda-time-2.2.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
@@ -228,6 +242,15 @@
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/lib/spring-data-jpa-1.0.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/spring-data-commons-core-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="spring-mvc-3.2.2.RELEASE" type="spring-mvc">
+      <properties version="3.2.2.RELEASE" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/spring-webmvc.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/spring-web.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

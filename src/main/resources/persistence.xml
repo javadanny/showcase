@@ -3,7 +3,6 @@
     <persistence-unit name="persistenceUnit">
         <class>com.cs.domain.BooksEntity</class>
         <class>com.cs.domain.CollegesEntity</class>
-        <class>com.cs.domain.CustomersEntity</class>
         <class>com.cs.domain.HireSourceEntity</class>
         <class>com.cs.domain.MajorsEntity</class>
         <class>com.cs.domain.MentorsEntity</class>

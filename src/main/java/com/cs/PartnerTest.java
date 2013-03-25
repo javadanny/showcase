@@ -5,8 +5,7 @@ import com.cs.domain.CollegesEntity;
 import com.cs.domain.PartnersEntity;
 import com.cs.domain.TeamsEntity;
 import com.cs.domain.TitlesEntity;
-import org.springframework.context.support.GenericXmlApplicationContext;
-
+import com.cs.service.*;
 import java.util.List;
 
 
@@ -19,13 +18,8 @@ import java.util.List;
  */
 public class PartnerTest {
     public static void main(String[] args) {
-        GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-        ctx.load("classpath:app-context.xml");
-        ctx.load("classpath:spring-config.xml");
-        ctx.refresh();
 
-        PartnersDao partnersDao = ctx.getBean("partnersDao", PartnersDao.class);
-
+        PartnerServiceImpl svc = new PartnerServiceImpl();
         // save one
         System.out.println("Adding one");
         PartnersEntity partner = new PartnersEntity();
@@ -46,18 +40,18 @@ public class PartnerTest {
         tle.setTitleId(2);
         partner.setTitlesByTitleId(tle);
 
-        partnersDao.save(partner);
+        svc.createPartner(partner);
 
         System.out.println("Find by ID");
-        partner = partnersDao.findByOnepass("c161635");
+        partner = svc.retrievePartnerByOnepass(partner);
         displayPartners(partner);
 
         System.out.println("Display all partners");
-        List<PartnersEntity> partners = partnersDao.findAll();
+        List<PartnersEntity> partners = svc.retrieveAllPartners();
         listPartners(partners);
 
         System.out.println("Delete a partner: " + partner.getOnepassId());
-        partnersDao.delete(partner);
+        svc.deletePartner(partner);
 
     }
 

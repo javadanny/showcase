@@ -22,17 +22,11 @@
       <column name="FIRST_NAME" sqlType="VARCHAR" length="60" precision="0" nullable="false" jdbcType="12" />
       <column name="LAST_NAME" sqlType="VARCHAR" length="40" precision="0" nullable="false" jdbcType="12" />
       <column name="BIRTH_DATE" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PHOTO" sqlType="BLOB" length="65535" precision="0" nullable="true" jdbcType="-4" />
+      <column name="VERSION" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MA==" />
       <primary-key name="PRIMARY" columns="ID" />
       <index name="UQ_CONTACT_1" unique="true" columns="FIRST_NAME,LAST_NAME" />
-    </table>
-    <table name="CONTACT_TEL_DETAIL" schema="" catalog="showcase" type="TABLE">
-      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
-      <column name="CONTACT_ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="TEL_TYPE" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
-      <column name="TEL_NUMBER" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="ID" />
-      <foreign-key name="FK_CONTACT_TEL_DETAIL_1" columns="CONTACT_ID" ref-table="CONTACT" ref-schema="" ref-catalog="showcase" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2" />
-      <index name="UQ_CONTACT_TEL_DETAIL_1" unique="true" columns="CONTACT_ID,TEL_TYPE" />
     </table>
     <table name="books" schema="" catalog="showcase" type="TABLE">
       <column name="book_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
@@ -47,19 +41,6 @@
       <column name="college_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
       <column name="college_nm" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
       <primary-key name="PRIMARY" columns="college_id" />
-      <exported-key name="fk_college_id" table="partners" schema="" catalog="showcase" columns="college_id" />
-    </table>
-    <table name="customers" schema="" catalog="showcase" type="TABLE">
-      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
-      <column name="first_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="last_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="email_address" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="home_address" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="city" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="state" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="zip" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
-      <column name="process_ts" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
-      <primary-key name="PRIMARY" columns="id" />
     </table>
     <table name="hire_source" schema="" catalog="showcase" type="TABLE">
       <column name="source_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
@@ -70,7 +51,6 @@
       <column name="major_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
       <column name="major_desc" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
       <primary-key name="PRIMARY" columns="major_id" />
-      <exported-key name="fk_major_id" table="partners" schema="" catalog="showcase" columns="major_id" />
     </table>
     <table name="mentors" schema="" catalog="showcase" type="TABLE">
       <column name="onepass_id" sqlType="VARCHAR" length="7" precision="0" nullable="false" jdbcType="12" />
@@ -79,23 +59,23 @@
     </table>
     <table name="partners" schema="" catalog="showcase" type="TABLE">
       <column name="onepass_id" sqlType="VARCHAR" length="7" precision="0" nullable="false" jdbcType="12" />
-      <column name="first_name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12" />
-      <column name="last_name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12" />
-      <column name="sadc_team_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="college_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="team_rank" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="sadc_rank" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="title_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="start_dt" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91" />
-      <column name="source_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
-      <column name="major_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <column name="first_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="last_name" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="sadc_team_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="college_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="team_rank" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="sadc_rank" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="title_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="start_dt" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
+      <column name="source_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="major_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <column name="ps_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <primary-key name="PRIMARY" columns="onepass_id" />
-      <foreign-key name="fk_college_id" columns="college_id" ref-table="colleges" ref-schema="" ref-catalog="showcase" ref-columns="college_id" update-rule="3" delete-rule="3" deferrability="2" />
-      <foreign-key name="fk_major_id" columns="major_id" ref-table="majors" ref-schema="" ref-catalog="showcase" ref-columns="major_id" update-rule="3" delete-rule="3" deferrability="2" />
-      <foreign-key name="fk_team_id" columns="sadc_team_id" ref-table="teams" ref-schema="" ref-catalog="showcase" ref-columns="team_id" update-rule="3" delete-rule="3" deferrability="2" />
-      <foreign-key name="fk_title_id" columns="title_id" ref-table="titles" ref-schema="" ref-catalog="showcase" ref-columns="title_id" update-rule="3" delete-rule="3" deferrability="2" />
+      <index name="fk_team_id" unique="false" columns="sadc_team_id" />
+      <index name="fk_college_id" unique="false" columns="college_id" />
+      <index name="fk_title_id" unique="false" columns="title_id" />
       <index name="fk_source_id" unique="false" columns="source_id" />
+      <index name="fk_major_id" unique="false" columns="major_id" />
     </table>
     <table name="teams" schema="" catalog="showcase" type="TABLE">
       <column name="team_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
@@ -103,7 +83,6 @@
       <column name="callup_date" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91" />
       <column name="size" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
       <primary-key name="PRIMARY" columns="team_id" />
-      <exported-key name="fk_team_id" table="partners" schema="" catalog="showcase" columns="sadc_team_id" />
     </table>
     <table name="titles" schema="" catalog="showcase" type="TABLE">
       <column name="title_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" remarks="CQ==" autoIncrement="true" />
@@ -114,7 +93,6 @@
       <column name="max_pay" sqlType="DECIMAL" length="10" precision="0" nullable="true" jdbcType="3" />
       <column name="pay_grade" sqlType="VARCHAR" length="45" precision="0" nullable="true" jdbcType="12" />
       <primary-key name="PRIMARY" columns="title_id" />
-      <exported-key name="fk_title_id" table="partners" schema="" catalog="showcase" columns="title_id" />
     </table>
   </data-source>
 </component>
